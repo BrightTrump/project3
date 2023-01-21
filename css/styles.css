@@ -1,0 +1,976 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins" sans-serif;
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: rgb(360, 350, 360);
+  --secondary-color: #007af3;
+}
+
+body {
+  background: black;
+}
+
+.navbar {
+  background-color: lightgray;
+  padding: 1em;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .container .mobile-menu {
+  cursor: pointer;
+}
+.navbar .container .logo {
+  color: rgb(8, 8, 8);
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.navbar .container .logo span {
+  color: var(--secondary-color);
+}
+.navbar nav {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 66%;
+  z-index: 999;
+  height: 100vh;
+  background: rgb(26, 25, 25);
+}
+.navbar nav .links {
+  margin-top: 5em;
+  list-style-type: none;
+  justify-content: space-between;
+  display: block;
+}
+.navbar nav .links li a {
+  padding: 0.5em;
+  color: white;
+  display: block;
+  font-size: 1.3em;
+  text-align: right;
+}
+.navbar nav .links li a:hover {
+  font-weight: bold;
+}
+.navbar nav .mobile-menu-exit {
+  float: right;
+  cursor: pointer;
+  margin: 0.5em;
+}
+.navbar nav.links {
+  display: block;
+}
+
+.content-wrapper {
+  padding: 8px;
+}
+.content-wrapper .content-desc span {
+  color: var(--secondary-color);
+}
+.content-wrapper .content-desc .gh1 {
+  color: rgb(31, 9, 228);
+  width: 550px;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 15px;
+}
+.content-wrapper .content-desc p {
+  color: white;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+.content-wrapper .content-desc .btn {
+  outline: none;
+  background: white;
+  border: none;
+  color: rgb(31, 9, 228);
+  padding: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 45px;
+}
+.content-wrapper .content-desc .btn:hover {
+  background: rgb(9, 202, 202);
+}
+
+.hero-p {
+  font-weight: bold;
+  font-size: 1.8em;
+  color: white;
+  margin: 1.5em 0px 10px 100px;
+}
+
+.hero {
+  display: block;
+  flex-wrap: nowrap;
+}
+.hero .hero-gallery {
+  margin: 1.5em 0px 15px 100px;
+  float: center;
+  align-items: center;
+  justify-content: center;
+}
+.hero .hero-gallery img {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  margin: 0 0 5em 0;
+}
+.hero .hero-gallery img:hover {
+  transform: translateY(-10px);
+}
+
+.hero-2 {
+  display: block;
+  flex-wrap: nowrap;
+}
+.hero-2 .hero-2-gallery {
+  margin: 1.5em 0px 15px 100px;
+  float: center;
+  align-items: center;
+  justify-content: center;
+  right: -149;
+}
+.hero-2 .hero-2-gallery img {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  margin: 0 0 5em 0;
+}
+.hero-2 .hero-2-gallery img:hover {
+  transform: translateY(-10px);
+}
+
+section.importance {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 1em;
+  position: absolute;
+  display: block;
+  background: url(../images/wallpaper4.jpg);
+  background-attachment: fixed;
+  width: 100%;
+  line-height: 2.2;
+  margin-top: 2em;
+}
+
+h1 {
+  color: white;
+  font-size: 1.5em;
+}
+
+.gallery-1 {
+  display: block;
+  padding: 15px;
+  float: center;
+  background: white;
+}
+.gallery-1 img {
+  width: 60%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-1 img:hover {
+  transform: translateY(-10px);
+}
+.gallery-1 .desc {
+  padding: 0.5em;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(15, 12, 231);
+  margin-bottom: 25px;
+}
+.gallery-1 .desc:hover {
+  background: black;
+}
+
+.gh3 {
+  color: white;
+  margin-top: 1.9em;
+  margin: 1.5em 1em;
+}
+
+.gallery-2 {
+  display: block;
+  margin: 0%;
+  justify-content: center;
+  padding: 15px;
+}
+.gallery-2 img {
+  width: 60%;
+  height: auto;
+}
+.gallery-2 img:hover {
+  transform: translateY(-10px);
+}
+.gallery-2 .desc {
+  padding: 0.2em;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.gallery-2 .desc:hover {
+  background: rgb(142, 143, 185);
+}
+
+.forums-nav {
+  background: rgb(20, 20, 20);
+}
+.forums-nav .subnav .sub-subnav {
+  list-style-type: none;
+  justify-content: space-between;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 0.2em;
+}
+.forums-nav .subnav .sub-subnav .special {
+  margin: 0.1em;
+  padding: 0.1em 0.2em;
+  border: 3px solid var(--secondary-color);
+}
+.forums-nav .subnav .sub-subnav .special:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.forums-section {
+  padding: 0.5em;
+  background: url(../images/wallpaper11.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+}
+.forums-section h1 {
+  font-weight: bold;
+  font-size: 2em;
+  color: azure;
+  display: block;
+  padding: 0.2em;
+}
+.forums-section .forums {
+  text-justify: auto;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 0.5em;
+  background: url(../images/wallpaper4.jpg);
+  background-attachment: fixed;
+  line-height: 2.2;
+}
+
+.topic {
+  font-weight: bold;
+  align-items: center;
+  padding-left: 0.2em;
+}
+.topic .topics .topicsnav {
+  display: block;
+  align-items: center;
+  cursor: pointer;
+}
+.topic .topics .topicsnav .sub-topicsnav {
+  margin: 0.5em;
+  padding: 0.1em;
+}
+.topic .topics .topicsnav .sub-topicsnav:hover {
+  background: white;
+}
+
+footer {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  background: rgb(32, 31, 31);
+  position: relative;
+}
+footer .footer-body {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+footer .footer-body .foot-logo .gzone {
+  color: black;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+footer .footer-body .footer-links .short-links {
+  color: white;
+  font-weight: 450;
+}
+footer .footer-body .footer-links li {
+  list-style-type: none;
+  line-height: 2rem;
+}
+footer .footer-body .footer-links li a .fab {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 15px;
+}
+footer .footer-body .footer-links li:hover {
+  background: grey;
+}
+
+.footer-bottom {
+  display: flex;
+  width: 100%;
+  height: 7vh;
+  background: rgb(12, 12, 12);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.875rem;
+}
+.footer-bottom span {
+  color: blue;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 700px) {
+  .mobile-menu,
+.mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+  }
+  .navbar .container .logo {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  .navbar .container nav {
+    display: flex;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+  }
+  .navbar .container nav .links {
+    display: flex;
+    margin: 0;
+  }
+  .navbar .container nav .links .active {
+    font-weight: bold;
+  }
+  .navbar .container nav .links a {
+    color: black;
+    font-size: 1.2em;
+    padding: 0.1em 1em;
+  }
+  .content-wrapper {
+    width: 60%;
+    padding: 18px;
+    min-height: 50vh;
+  }
+  .content-wrapper .content-desc {
+    font-size: 1px;
+  }
+  .content-wrapper .content-desc span {
+    color: rgb(31, 9, 228);
+  }
+  .content-wrapper .content-desc .gh1 {
+    color: rgb(31, 9, 228);
+    font-weight: bold;
+    font-size: 35em;
+    margin-top: 10px;
+    margin-top: 0.8em;
+    margin-bottom: 15px;
+  }
+  .content-wrapper .content-desc p {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .content-wrapper .content-desc .btn {
+    outline: none;
+    background: white;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 45px;
+    height: 5vh;
+  }
+  .content-wrapper .content-desc .btn:hover {
+    background: rgb(205, 206, 218);
+  }
+  .hero-p {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: white;
+    margin: 1.5em 0px 10px 100px;
+  }
+  .hero {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .hero .hero-gallery {
+    margin: 1.5em 0px 15px 100px;
+    float: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero .hero-gallery img {
+    width: 60px;
+    height: 100px;
+    display: flex;
+    margin: 0 0 2em 0;
+  }
+  .hero .hero-gallery img:hover {
+    transform: translateY(-10px);
+  }
+  .hero-2 {
+    display: flex;
+    flex-wrap: nowrap;
+    right: -149;
+  }
+  .hero-2 .hero-2-gallery {
+    margin: 1.5em 0px 15px 100px;
+    float: center;
+    align-items: center;
+    justify-content: center;
+    right: -149;
+  }
+  .hero-2 .hero-2-gallery img {
+    width: 60px;
+    height: 100px;
+    display: flex;
+    margin: 0 0 5em 0;
+    right: -149;
+  }
+  .hero-2 .hero-2-gallery img:hover {
+    transform: translateY(-10px);
+  }
+  section.importance {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1em;
+    position: absolute;
+    display: block;
+    background: url(../images/wallpaper4.jpg);
+    background-attachment: fixed;
+    line-height: 2.6;
+    margin-top: 2em;
+  }
+  /*gamespage*/
+  h1 {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1em;
+  }
+  .section-gallery-1 {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .section-gallery-1 .gallery-1 {
+    margin-left: 0;
+    padding: 1em;
+    background: rgb(226, 219, 219);
+  }
+  .section-gallery-1 .gallery-1 img {
+    width: 78px;
+    height: auto;
+    display: flex;
+  }
+  .section-gallery-1 .gallery-1 img:hover {
+    transform: translateY(-10px);
+  }
+  .section-gallery-1 .gallery-1 .desc {
+    padding: 0.1em;
+    text-align: left;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    width: 70px;
+  }
+  .section-gallery-1 .gallery-1 .desc:hover {
+    background: black;
+  }
+  .gh3 {
+    font-weight: bold;
+    color: white;
+    margin-top: 3.5em;
+    margin-bottom: 15px;
+  }
+  .section-gallery-2 {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .section-gallery-2 .gallery-2 {
+    margin-left: 0;
+    padding: 15px;
+    float: center;
+    align-items: center;
+    justify-content: space-between;
+    background-attachment: fixed;
+  }
+  .section-gallery-2 .gallery-2 img {
+    width: 100px;
+    height: auto;
+    display: flex;
+    left: -150px;
+    display: flex;
+  }
+  .section-gallery-2 .gallery-2 img:hover {
+    transform: translateY(-10px);
+  }
+  .section-gallery-2 .gallery-2 .desc {
+    padding: 0.1em;
+    text-align: left;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 3.5em;
+  }
+  .section-gallery-2 .gallery-2 .desc:hover {
+    background: rgb(218, 213, 213);
+  }
+  .forums-nav {
+    background: rgb(20, 20, 20);
+  }
+  .forums-nav .subnav .sub-subnav {
+    list-style-type: none;
+    justify-content: space-between;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+  }
+  .forums-nav .subnav .sub-subnav .special {
+    margin: 0.1em;
+    padding: 0.1em 0.2em;
+    border: 3px solid var(--secondary-color);
+  }
+  .forums-nav .subnav .sub-subnav .special:hover {
+    background: var(--primary-color);
+    color: white;
+  }
+  .forums-section {
+    padding: 0.5em;
+    background: rgb(59, 57, 57);
+  }
+  .forums-section h1 {
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+    display: block;
+    width: 60%;
+    padding: 18px;
+  }
+  .forums-section .forums {
+    text-justify: auto;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+    background: url(../images/wallpaper4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 80%;
+    padding: 18px;
+    min-height: 60vh;
+    line-height: 3.6;
+  }
+  .topic {
+    font-weight: bold;
+    align-items: center;
+    padding-left: 0.2em;
+  }
+  .topic .topics .topicsnav {
+    display: block;
+    align-items: center;
+    cursor: pointer;
+  }
+  .topic .topics .topicsnav .sub-topicsnav {
+    margin: 0.5em;
+    padding: 0.1em;
+  }
+  .topic .topics .topicsnav .sub-topicsnav:hover {
+    background: white;
+  }
+  footer {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    background: rgb(121, 110, 110);
+    position: relative;
+  }
+  footer .footer-body {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+  }
+  footer .footer-body .foot-logo .gzone {
+    color: black;
+    font-weight: bold;
+    font-size: 2.3rem;
+  }
+  footer .footer-body .footer-links .short-links {
+    color: white;
+    font-weight: 450;
+  }
+  footer .footer-body .footer-links li {
+    list-style-type: none;
+    line-height: 2rem;
+  }
+  footer .footer-body .footer-links li a .fab {
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 15px;
+  }
+  footer .footer-body .footer-links li:hover {
+    background: grey;
+  }
+  .footer-bottom {
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    background: rgb(12, 12, 12);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.875rem;
+  }
+  .footer-bottom span {
+    color: blue;
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+  }
+  .navbar .container .logo {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  .navbar .container nav {
+    display: flex;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+  }
+  .navbar .container nav .links {
+    display: flex;
+    margin: 0;
+  }
+  .navbar .container nav .links .active {
+    font-weight: bold;
+  }
+  .navbar .container nav .links a {
+    color: black;
+    font-size: 1.2em;
+    padding: 0.1em 1em;
+  }
+  .content-wrapper {
+    width: 60%;
+    padding: 18px;
+    min-height: 50vh;
+  }
+  .content-wrapper .content-desc {
+    font-size: 1px;
+  }
+  .content-wrapper .content-desc span {
+    color: rgb(31, 9, 228);
+  }
+  .content-wrapper .content-desc .gh1 {
+    color: rgb(31, 9, 228);
+    font-weight: bold;
+    font-size: 35em;
+    margin-top: 10px;
+    margin-top: 0.8em;
+    margin-bottom: 15px;
+  }
+  .content-wrapper .content-desc p {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .content-wrapper .content-desc .btn {
+    outline: none;
+    background: white;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    height: 5vh;
+  }
+  .content-wrapper .content-desc .btn:hover {
+    background: rgb(205, 206, 218);
+  }
+  .hero-p {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: white;
+    margin: 1.5em 0px 10px 100px;
+  }
+  .hero {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .hero .hero-gallery {
+    margin: 1.5em 0px 15px 100px;
+    float: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero .hero-gallery img {
+    width: 100px;
+    height: 200px;
+    display: flex;
+    margin: 0 0 5em 0;
+  }
+  .hero .hero-gallery img:hover {
+    transform: translateY(-10px);
+  }
+  .hero-2 {
+    display: flex;
+    flex-wrap: nowrap;
+    right: -149;
+  }
+  .hero-2 .hero-2-gallery {
+    margin: 1.5em 0px 15px 100px;
+    float: center;
+    align-items: center;
+    justify-content: center;
+    right: -149;
+  }
+  .hero-2 .hero-2-gallery img {
+    width: 100px;
+    height: 200px;
+    display: flex;
+    margin: 0 0 5em 0;
+    right: -149;
+  }
+  .hero-2 .hero-2-gallery img:hover {
+    transform: translateY(-10px);
+  }
+  section.importance {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1em;
+    position: absolute;
+    display: block;
+    background: url(../images/wallpaper4.jpg);
+    background-attachment: fixed;
+    line-height: 2.6;
+    width: 100%;
+    margin: 16em 0 6em 0;
+  }
+  /*gamespage*/
+  h1 {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1em;
+  }
+  .section-gallery-1 {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .section-gallery-1 .gallery-1 {
+    margin-left: 0;
+    padding: 1em;
+    float: center;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+  }
+  .section-gallery-1 .gallery-1 img {
+    width: 125px;
+    height: auto;
+    display: flex;
+  }
+  .section-gallery-1 .gallery-1 img:hover {
+    transform: translateY(-10px);
+  }
+  .section-gallery-1 .gallery-1 .desc {
+    padding: 0.1em;
+    text-align: left;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  .section-gallery-1 .gallery-1 .desc:hover {
+    background: black;
+  }
+  .gh3 {
+    font-weight: bold;
+    color: white;
+    margin-top: 3.5em;
+    margin-bottom: 15px;
+  }
+  .section-gallery-2 {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .section-gallery-2 .gallery-2 {
+    margin-left: 0;
+    padding: 15px;
+    float: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-gallery-2 .gallery-2 img {
+    width: 145px;
+    height: auto;
+    display: flex;
+    display: flex;
+  }
+  .section-gallery-2 .gallery-2 img:hover {
+    transform: translateY(-10px);
+  }
+  .section-gallery-2 .gallery-2 .desc {
+    padding: 0.1em;
+    text-align: left;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 3.5em;
+  }
+  .section-gallery-2 .gallery-2 .desc:hover {
+    background: rgb(218, 213, 213);
+  }
+  .forums-nav {
+    background: rgb(20, 20, 20);
+  }
+  .forums-nav .subnav .sub-subnav {
+    list-style-type: none;
+    justify-content: space-between;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+  }
+  .forums-nav .subnav .sub-subnav .special {
+    margin: 0.1em;
+    padding: 0.1em 0.2em;
+    border: 3px solid var(--secondary-color);
+  }
+  .forums-nav .subnav .sub-subnav .special:hover {
+    background: var(--primary-color);
+    color: white;
+  }
+  .forums-section {
+    padding: 0.5em;
+    background: rgb(59, 57, 57);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .forums-section h1 {
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+    display: block;
+    width: 60%;
+    padding: 18px;
+  }
+  .forums-section .forums {
+    text-justify: auto;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+    background: url(../images/wallpaper7.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 80%;
+    padding: 18px;
+    min-height: 60vh;
+    line-height: 3.6;
+  }
+  .topic {
+    font-weight: bold;
+    align-items: center;
+    padding-left: 0.2em;
+  }
+  .topic .topics .topicsnav {
+    display: block;
+    align-items: center;
+    cursor: pointer;
+  }
+  .topic .topics .topicsnav .sub-topicsnav {
+    margin: 0.5em;
+    padding: 0.1em;
+  }
+  .topic .topics .topicsnav .sub-topicsnav:hover {
+    background: white;
+  }
+  footer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    background: rgb(121, 110, 110);
+    position: relative;
+  }
+  footer .footer-body {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+  }
+  footer .footer-body .foot-logo .gzone {
+    color: black;
+    font-weight: bold;
+    font-size: 2.3rem;
+  }
+  footer .footer-body .footer-links .short-links {
+    color: white;
+    font-weight: 450;
+  }
+  footer .footer-body .footer-links li {
+    list-style-type: none;
+    line-height: 2rem;
+  }
+  footer .footer-body .footer-links li a .fab {
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 15px;
+  }
+  footer .footer-body .footer-links li:hover {
+    background: grey;
+  }
+  .footer-bottom {
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    background: rgb(12, 12, 12);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.875rem;
+  }
+  .footer-bottom span {
+    color: blue;
+    font-weight: bold;
+  }
+}/*# sourceMappingURL=styles.css.map */
